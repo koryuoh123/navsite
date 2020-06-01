@@ -38,7 +38,6 @@ const render = () => {
       /*删除功能*/
       $li.on("click", ".edit", (e) => {
         e.stopPropagation();
-
         hashMap.splice(index, 1);
         render();
       });
@@ -48,7 +47,7 @@ const render = () => {
     if (node.logoType === "text") {
       const $li = $(`<li>
                   <div class="site">
-                  <div class="close">
+                  <div class="edit">
                   <svg class="icon" aria-hidden="true">
                     <use xlink:href="#icon-choose2"></use>
                   </svg>

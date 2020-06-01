@@ -156,7 +156,7 @@ var render = function render() {
 
 
     if (node.logoType === "text") {
-      var _$li = $("<li>\n                  <div class=\"site\">\n                  <div class=\"close\">\n                  <svg class=\"icon\" aria-hidden=\"true\">\n                    <use xlink:href=\"#icon-choose2\"></use>\n                  </svg>\n                  </div>\n                      <div class=\"logo\">".concat(simplifyUrl(simplifyUrl(node.url)[0]), "</div>\n                      <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  </div> \n              </li>")).insertBefore($lastLi);
+      var _$li = $("<li>\n                  <div class=\"site\">\n                  <div class=\"edit\">\n                  <svg class=\"icon\" aria-hidden=\"true\">\n                    <use xlink:href=\"#icon-choose2\"></use>\n                  </svg>\n                  </div>\n                      <div class=\"logo\">".concat(simplifyUrl(simplifyUrl(node.url)[0]), "</div>\n                      <div class=\"link\">").concat(simplifyUrl(node.url), "</div>\n                  </div> \n              </li>")).insertBefore($lastLi);
       /*跳转功能 */
 
 
@@ -209,4 +209,4 @@ var simplifyUrl = function simplifyUrl(url) {
 
 render();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.58b1b628.js.map
+//# sourceMappingURL=main.a54afdef.js.map

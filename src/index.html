@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover"
+    />
+    <title>前航 - 前端导航站点</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+    <style type="text/css">
+      .icon {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="globalHeader">
+      <form class="searchForm" method="get" action="https://www.baidu.com/s">
+        <input name="wd" type="text" />
+        <button type="submit">搜索</button>
+      </form>
+    </header>
+    <main class="globalMain">
+      <div class="father">
+      <ul class="siteList">
+        <li class="last">
+          <div class="addButton">
+            <div class="icon-wrapper">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-add-pink"></use>
+              </svg>
+            </div>
+            <div class="text">新增网站</div>
+          </div>
+        </li>
+      </ul></div>
+      <!-- <dialog class="editSite">
+        <form method="dialog">
+        <div class="title">修改快捷方式</div>
+        <div class="name">名称</div>
+        <input type="text" name="nameInput">
+        <div class="url">网址</div>
+        <input type="text" name="urlInput">
+        <div class="buttonContainer">
+          <button class="delete" >删除</button>
+          <div class ="fill"></div>
+          <button class="confirm"type ="submit"value = "default">确定</button>
+          <button class="cancel">取消</button>
+        </div>
+      </form>
+      </dialog> -->
+    </main>
+    
+    <script src="//at.alicdn.com/t/font_1839895_a26oud6sj1w.js"></script>
+    <script src="//at.alicdn.com/t/font_1839895_wf5cuew2n9.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+/*CSS RESET*/
+* {
+  box-sizing: borderbox;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/*style*/
+body {
+  background: #eee;
+   
+}
+.globalHeader {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  display: flex;
+}
+.globalMain{
+     position: relative;}
+.searchForm {
+  display: flex;
+}
+.searchForm > input {
+  width: 100%;
+  margin-right: 26px;
+  border: none;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 4px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  background: #fb7299;
+  color: white;
+  width: 80px;
+}
+
+@media (min-width: 500px) {
+  .globalHeader {
+    justify-content: center;
+  }
+  .searchForm {
+    justify-content: center;
+    min-width: 500px;
+  }
+
+  .globalMain {
+    /* max-width: 900px;
+    min-width: 530px; */
+    width: 100%;
+  }
+  .globalMain .father {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .siteList {
+    margin-right: -25px;
+  }
+  .siteList > li {
+    margin-right: 25px;
+  }
+  .siteList {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  .searchForm {
+    width: 100%;
+  }
+  .globalMain .father {
+    /* border:1px solid red;  */
+    max-width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .siteList > li {
+    margin-right: 15px;
+  }
+  .siteList {
+    margin-right: -15px;
+  }
+  .siteList {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.siteList > li {
+  margin-bottom: 10px;
+}
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  padding: 20px 0;
+  position: relative;
+}
+.siteList .site .edit {
+  position: absolute;
+  right: 3px;
+  top: 0;
+  display: none;
+}
+.siteList .site:hover > .edit {
+  display: block;
+}
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.addButton {
+  background: white;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 20px; */
+  height: 125.2px;
+  /*找不到原因所以强行制定了，原来是124*/
+}
+.addButton .icon-wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addButton .icon {
+  width: 56px;
+  height: 56px;
+}
+.addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/*@media (min-width: 500px) {
+  .editSite {
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 350px;
+    height: 300px;
+    position: absolute;
+    transform: translateX(-50%);
+    left:50%;
+  }
+  .editSite .title {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  #nameInput {
+    width: calc(100% - 13px);
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 20px;
+  }
+  #urlInput {
+    width: calc(100% - 13px);
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 20px;
+  }
+  .editSite .buttonContainer {
+    
+    margin-top: 30px;
+  }
+  .editSite .delete {
+    width: 58px;
+    height: 32px;
+  }
+  .editSite .fill {
+    display: inline-block;
+    width:200px;
+  }
+  .editSite .confirm {
+    width: 58px;
+    height: 32px;
+    margin-left:10px;
+    margin-right:0;
+  }
+  .editSite .cancel {
+    width: 58px;
+    height: 32px;
+    margin-left:10px;
+    margin-right:0;
+  }
+}
+.editSite::backdrop {
+   
+    background-color: rgba(0, 0, 0, 0.4);
+  }*/
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
